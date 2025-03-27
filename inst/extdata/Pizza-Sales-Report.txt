@@ -1,0 +1,105 @@
+OrderID|Date-time|Time|Customer Name|Pizza Type|Pizza Name|Pizza Size|Unit Price|Quantity|Total Price|Payment Method
+1061|01-01-2023|13:15:08|Chris Lee|Veg|Pepperoni Pizza|Small|6.1|5|30.5|Debit Card
+1001|01-01-2023|22:01:11|Jane Smith|Veg|Pepperoni Pizza|Medium|10.41|4|41.64|Cash
+1083|01-01-2023|16:38:46|Chris Lee|Veg|Hawaiian Pizza|Medium|13.24|2|26.48|Cash
+1041|01-01-2023|16:13:19|Laura Jackson|Non-Veg|Margherita Pizza|Small|8.71|1|8.71|Debit Card
+1003|04-01-2023|21:10:17|Laura Jackson|Veg|Veggie Supreme Pizza|Small|9.19|4|36.76|Cash
+1089|04-01-2023|21:10:17|Sarah Taylor|Veg|Margherita Pizza|Large|15.64|1|15.64|Online Payment
+1089|04-01-2023|11:50:18|Sarah Taylor|Veg|Margherita Pizza|Large|15.64|1|15.64|Online Payment
+1020|30-01-2023|17:39:59|Michael Brown|Veg|Margherita Pizza|Large|15.64|1|15.64|Online Payment
+1017|01-02-2023|19:03:01|Robert Moore|Veg|Veggie Supreme Pizza|Small|9.19|1|9.19|Cash
+1038|01-02-2023|19:28:28|Sarah Taylor|Veg|Veggie Supreme Pizza|Medium|14.21|4|56.84|Credit Card
+1041|01-02-2023|21:10:17|Robert Moore|Non-Veg|Pepperoni Pizza|Medium|12.14|2|24.28|Cash
+1005|03-02-2023|19:03:01|Alice Johnson|Veg|Margherita Pizza|Medium|9.99|1|9.99|Online Payment
+1086|03-02-2023|22:01:11|John Doe|Veg|Veggie Supreme Pizza|Small|9.19|2|18.38|Debit Card
+1023|04-02-2023|16:13:19|Emily Davis|Veg|Pepperoni Pizza|Small|6.1|3|18.3|Credit Card
+1003|04-02-2023|13:15:02|Sarah Taylor|Non-Veg|Pepperoni Pizza|Large|18.48|2|36.96|Credit Card
+1077|25-02-2023|11:50:18|Chris Lee|Veg|Pepperoni Pizza|Small|6.1|3|18.3|Credit Card
+1029|26-02-2023|13:15:08|Robert Moore|Non-Veg|Pepperoni Pizza|Large|18.48|1|18.48|Debit Card
+1090|01-03-2023|22:01:11|Robert Moore|Non-Veg|Margherita Pizza|Small|8.71|4|34.84|Debit Card
+1002|04-03-2023|14:12:26|Alice Johnson|Veg|Veggie Supreme Pizza|Small|9.19|4|36.76|Online Payment
+1054|14-03-2023|19:28:28|Chris Lee|Veg|Pepperoni Pizza|Medium|10.41|5|52.05|Credit Card
+1077|23-03-2023|19:28:28|Laura Jackson|Veg|Pepperoni Pizza|Large|15|4|60|Debit Card
+1080|04-04-2023|15:01:10|Chris Lee|Veg|Veggie Supreme Pizza|Large|18.36|2|36.72|Online Payment
+1072|01-05-2023|22:01:11|Emily Davis|Veg|Pepperoni Pizza|Large|15|5|75|Online Payment
+1043|03-05-2023|13:15:08|NA|Non-Veg|BBQ Chicken Pizza|Small|9.85|2|19.7|Online Payment
+1034|04-05-2023|22:26:51|Laura Jackson|Veg|Pepperoni Pizza|Large|15|4|60|Credit Card
+1061|03-06-2023|21:10:17|Emily Davis|Veg|Margherita Pizza|Small|6.56|4|26.24|Cash
+1020|03-06-2023|19:03:01|Emily Davis|Veg|Margherita Pizza|Small|6.56|4|26.24|Cash
+1083|01-07-2023|21:10:17|Alice Johnson|Non-Veg|BBQ Chicken Pizza|Large|20.58|1|20.58|Debit Card
+1006|02-07-2023|21:10:17|David Wilson|Non-Veg|BBQ Chicken Pizza|Large|20.58|2|41.16|Credit Card
+1082|03-07-2023|22:01:11|John Doe|Veg|Margherita Pizza|Medium|9.99|3|29.97|Debit Card
+1037|04-07-2023|21:56:26|Michael Brown|Veg|Hawaiian Pizza|Large|18.35|4|73.4|Cash
+1050|01-08-2023|13:15:08|David Wilson|Veg|Pepperoni Pizza|Small|6.1|4|24.4|Credit Card
+1002|02-08-2023|22:01:11|Robert Moore|Veg|Pepperoni Pizza|Large|15|2|30|Credit Card
+1051|03-08-2023|11:50:18|Sarah Taylor|Non-Veg|BBQ Chicken Pizza|Large|20.58|2|41.16|Debit Card
+1088|04-08-2023|18:06:03|Michael Brown|Veg|Veggie Supreme Pizza|Large|18.36|1|18.36|Online Payment
+1021|02-09-2023|16:13:19|Alice Johnson|Veg|Veggie Supreme Pizza|Small|9.19|4|36.76|Cash
+1083|04-09-2023|19:20:01|Robert Moore|Veg|Pepperoni Pizza|Small|6.1|4|24.4|Online Payment
+1052|01-10-2023|19:28:28|Emily Davis|Veg|Veggie Supreme Pizza|Medium|14.21|3|42.63|Debit Card
+1057|01-10-2023|19:03:01|Jane Smith|Non-Veg|Pepperoni Pizza|Large|18.48|5|92.4|Credit Card
+1034|03-10-2023|19:28:28|Emily Davis|Non-Veg|Margherita Pizza|Large|17.24|4|68.96|Debit Card
+1052|02-11-2023|19:28:28|Alice Johnson|Non-Veg|Margherita Pizza|Small|8.71|4|34.84|Cash
+1050|01-12-2023|22:01:11|Michael Brown|Veg|Margherita Pizza|Medium|9.99|5|49.95|Cash
+1087|01-12-2023|19:28:28|Alice Johnson|Non-Veg|Margherita Pizza|Small|8.71|2|17.42|Online Payment
+1087|01-12-2023|19:03:01|Alice Johnson|Non-Veg|Margherita Pizza|Small|8.71|2|17.42|Online Payment
+1052|02-12-2023|11:50:18|Michael Brown|Veg|Margherita Pizza|Large|15.64|3|46.92|Credit Card
+1048|03-12-2023|13:15:08|David Wilson|Veg|Margherita Pizza|Small|6.56|2|13.12|Debit Card
+1017|03-12-2023|22:01:11|Michael Brown|Non-Veg|BBQ Chicken Pizza|Medium|15.31|1|15.31|Debit Card
+1035|03-12-2023|11:50:18|Laura Jackson|Veg|Pepperoni Pizza|Small|6.1|5|30.5|Credit Card
+1059|01-01-2024|17:39:59|David Wilson|Non-Veg|BBQ Chicken Pizza|Medium|15.31|1|15.31|Debit Card
+1075|03-01-2024|16:38:46|Jane Smith|Non-Veg|Pepperoni Pizza|Medium|12.14|2|24.28|Online Payment
+1041|03-01-2024|19:03:01|David Wilson|Veg|Veggie Supreme Pizza|Medium|14.21|2|28.42|Cash
+1007|01-02-2024|16:38:46|Michael Brown|Veg|Veggie Supreme Pizza|Large|18.36|4|73.44|Debit Card
+1057|02-02-2024|16:13:19|Michael Brown|Veg|Veggie Supreme Pizza|Medium|14.21|2|28.42|Debit Card
+1077|03-02-2024|16:38:46|Michael Brown|Veg|Hawaiian Pizza|Medium|13.24|5|66.2|Online Payment
+1091|02-03-2024|16:47:15|Laura Jackson|Non-Veg|BBQ Chicken Pizza|Small|9.85|2|19.7|Credit Card
+1049|02-03-2024|22:01:11|Alice Johnson|Veg|Veggie Supreme Pizza|Medium|14.21|1|14.21|Online Payment
+1099|02-03-2024|17:39:59|Chris Lee|Veg|Veggie Supreme Pizza|Large|18.36|4|73.44|Credit Card
+1089|02-03-2024|16:47:15|Jane Smith|Veg|Veggie Supreme Pizza|Large|18.36|1|18.36|Cash
+1014|02-03-2024|21:10:17|Laura Jackson|Veg|Hawaiian Pizza|Large|18.35|3|55.05|Debit Card
+1087|02-03-2024|19:03:01|Michael Brown|Veg|Pepperoni Pizza|Small|6.1|4|24.4|Credit Card
+1033|02-03-2024|16:47:15|Alice Johnson|Non-Veg|Pepperoni Pizza|Small|8.1|1|8.1|Cash
+1003|01-04-2024|13:15:08|Chris Lee|Veg|Margherita Pizza|Large|15.64|4|62.56|Credit Card
+1003|01-04-2024|19:03:01|Chris Lee|Veg|Margherita Pizza|Large|15.64|4|62.56|Credit Card
+1081|02-04-2024|11:50:18|Emily Davis|Non-Veg|Hawaiian Pizza|Large|20.85|2|41.7|Online Payment
+1060|03-04-2024|22:01:11|Michael Brown|Non-Veg|Pepperoni Pizza|Medium|12.14|1|12.14|Online Payment
+1071|02-05-2024|19:03:01|Emily Davis|Veg|Pepperoni Pizza|Medium|10.41|2|20.82|Debit Card
+1020|02-05-2024|11:50:18|Chris Lee|Veg|Pepperoni Pizza|Medium|10.41|4|41.64|Debit Card
+1033|02-05-2024|22:01:11|Emily Davis|Veg|Hawaiian Pizza|Medium|13.24|1|13.24|Cash
+1071|03-05-2024|16:38:46|John Doe|Non-Veg|BBQ Chicken Pizza|Medium|15.31|3|45.93|Cash
+1047|02-06-2024|11:50:18|Jane Smith|Veg|Hawaiian Pizza|Small|8.48|4|33.92|Credit Card
+NA|02-06-2024|19:28:28|John Doe|Veg|Pepperoni Pizza|Large|15|2|30|Credit Card
+1043|03-06-2024|16:38:46|Michael Brown|Non-Veg|Pepperoni Pizza|Small|8.1|3|24.3|Cash
+1006|03-06-2024|19:03:01|Jane Smith|Veg|Veggie Supreme Pizza|Large|18.36|1|18.36|Online Payment
+1054|03-06-2024|13:15:08|Alice Johnson|Veg|Hawaiian Pizza|Large|18.35|4|73.4|Credit Card
+1051|01-07-2024|21:10:17|Jane Smith|Veg|Pepperoni Pizza|Small|6.1|1|6.1|Credit Card
+1047|01-07-2024|17:39:59|Robert Moore|Non-Veg|Pepperoni Pizza|Medium|12.14|4|48.56|Online Payment
+1047|01-07-2024|21:10:17|Robert Moore|Non-Veg|Pepperoni Pizza|Medium|12.14|4|48.56|Online Payment
+1091|01-08-2024|16:47:15|Emily Davis|Veg|Veggie Supreme Pizza|Large|18.36|5|91.8|Credit Card
+1023|02-08-2024|16:47:15|Jane Smith|Non-Veg|Pepperoni Pizza|Large|18.48|5|92.4|Credit Card
+1074|01-09-2024|22:01:11|Robert Moore|Non-Veg|BBQ Chicken Pizza|Large|20.58|2|41.16|Cash
+1014|01-10-2024|11:50:18|Alice Johnson|Veg|Veggie Supreme Pizza|Large|18.36|3|55.08|Online Payment
+1053|02-10-2024|16:38:46|Laura Jackson|Veg|Hawaiian Pizza|Medium|13.24|2|26.48|Debit Card
+1081|01-11-2024|16:47:15|Robert Moore|Veg|Veggie Supreme Pizza|Small|9.19|2|18.38|Debit Card
+1041|02-11-2024|11:50:18|Sarah Taylor|Veg|Veggie Supreme Pizza|Large|18.36|5|91.8|Online Payment
+1001|02-11-2024|21:10:17|Alice Johnson|Veg|Hawaiian Pizza|Large|18.35|1|18.35|Cash
+1052|03-11-2024|13:15:08|Michael Brown|Non-Veg|BBQ Chicken Pizza|Small|9.85|3|29.55|Credit Card
+1061|03-11-2024|21:10:17|David Wilson|Non-Veg|BBQ Chicken Pizza|Small|9.85|2|19.7|Cash
+1007|03-11-2024|19:03:01|Alice Johnson|Veg|Veggie Supreme Pizza|Medium|14.21|1|14.21|Cash
+1074|01-12-2024|21:10:17|Laura Jackson|Non-Veg|Margherita Pizza|Small|8.71|2|17.42|Credit Card
+1081|02-01-2025|13:15:08|Jane Smith|Veg|Margherita Pizza|Large|15.64|NA|NA|Online Payment
+1079|03-01-2025|11:50:18|Chris Lee|Veg|Pepperoni Pizza|Small|6.1|1|6.1|Online Payment
+1077|03-01-2025|22:01:11|Sarah Taylor|Veg|Veggie Supreme Pizza|Small|9.19|2|18.38|Cash
+1092|02-02-2025|19:03:01|Robert Moore|Veg|Veggie Supreme Pizza|Large|18.36|1|18.36|Debit Card
+1059|02-02-2025|16:47:15|Chris Lee|Non-Veg|BBQ Chicken Pizza|Small|9.85|1|9.85|Debit Card
+1092|01-03-2025|19:03:01|John Doe|Non-Veg|BBQ Chicken Pizza|Small|9.85|2|19.7|Cash
+1059|02-03-2025|11:50:18|Robert Moore|Veg|Pepperoni Pizza|Small|6.1|3|18.3|Cash
+1039|03-03-2025|13:15:08|Michael Brown|Non-Veg|Hawaiian Pizza|Medium|15.32|2|30.64|Online Payment
+1083|03-03-2025|21:10:17|Emily Davis|Non-Veg|Margherita Pizza|Medium|12.4|1|12.4|Online Payment
+1005|01-04-2025|19:03:01|Michael Brown|Non-Veg|BBQ Chicken Pizza|Small|9.85|3|29.55|Credit Card
+1059|03-05-2025|19:28:28|Robert Moore|Veg|Pepperoni Pizza|Small|6.1|3|18.3|Credit Card
+1046|03-05-2025|21:10:17|Emily Davis|Non-Veg|Pepperoni Pizza|Small|8.1|5|40.5|Credit Card
+1079|01-06-2025|17:39:59|Alice Johnson|Veg|Margherita Pizza|Medium|9.99|5|49.95|NA
+1035|03-06-2025|16:47:15|Robert Moore|Veg|Veggie Supreme Pizza|Small|9.19|2|18.38|Credit Card
+1037|NA|NA|Robert Moore|Veg|Margherita Pizza|Small|6.56|3|19.68|Debit Card

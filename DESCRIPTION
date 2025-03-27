@@ -1,0 +1,25 @@
+Package: autofileIO
+Title: Automated File and Database I/O for R
+Version: 1.0
+Authors@R: 
+    person("Ankit Akash", "Kalita", email = "ankitakashkalita2002@gmail.com", role = c("aut", "cre", "cph"))
+Description: A smart and flexible I/O package that automatically detects
+    file types and database connections, then applies the appropriate read
+    and write functions.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.4.0)
+Imports:
+    DBI,
+    readr (>= 2.1.5),
+    readxl,
+    stringr,
+    tibble,
+    tidyr,
+    tools,
+    writexl
+Suggests:
+    RSQLite,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
