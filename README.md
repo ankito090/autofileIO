@@ -50,7 +50,139 @@ autofileIO is an R package designed to simplify file input and output operations
 - **`auto_read()`:** Automatically Read Data from Files or SQL Database Tables
 
     **Examples:**
-    ```r
-    
-    ```
 
+    The **autofileIO** package includes sample datasets stored in the `inst/extdata` directory.  
+    These datasets can be accessed using `system.file()`:
+    ```r
+    csv_file <- system.file("extdata", "Pizza-Sales-Report.csv", package = "autofileIO")
+    tsv_file <- system.file("extdata", "Pizza-Sales-Report.tsv", package = "autofileIO")
+    delimited_text_file <- system.file("extdata", "Pizza-Sales-Report.txt", package = "autofileIO")
+    excel_file <- system.file("extdata", "Pizza-Sales-Report.xlsx", package = "autofileIO")
+    sqlite_file <- system.file("extdata", "Pizza-Sales-Report.db", package = "autofileIO")
+    ```
+    Read a csv file:
+    ```r
+    auto_read(csv_file)
+    #> # A tibble: 104 x 11
+    #>    OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>      <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>  1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>  2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>  3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>  4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>  5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>  6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>  9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #> 10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #> # i 94 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    Read a TSV file:
+    ```r
+    auto_read(tsv_file)
+    #> # A tibble: 104 x 11
+    #>    OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>      <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>  1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>  2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>  3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>  4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>  5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>  6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>  9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #> 10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #> # i 94 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    Read a delimited text file:
+    ```r
+    auto_read(delimited_text_file)
+    #> # A tibble: 104 x 11
+    #>    OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>      <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>  1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>  2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>  3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>  4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>  5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>  6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>  9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #> 10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #> # i 94 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    Read an Excel file (first sheet):
+    ```r
+    auto_read(excel_file)
+    #> # A tibble: 104 x 11
+    #>    OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>      <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>  1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>  2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>  3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>  4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>  5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>  6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>  9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #> 10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #> # i 94 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    Read a table from a sql database connection:
+    ```r
+    library(DBI)
+    library(RSQLite)
+    conn <- dbConnect(RSQLite::SQLite(), sqlite_file)
+    auto_read(conn, name = "SalesReport")
+    dbDisconnect(conn)
+    #> # A tibble: 104 x 11
+    #>    OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>      <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>  1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>  2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>  3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>  4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>  5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>  6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>  8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>  9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #> 10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #> # i 94 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    Drop NA values after reading:
+    ```r
+    auto_read(csv_file, drop_na = TRUE)
+    #> # A tibble: 99 x 11
+    #> OrderID `Date-time` Time     `Customer Name` `Pizza Type` `Pizza Name`   `Pizza Size`
+    #>   <dbl> <chr>       <time>   <chr>           <chr>        <chr>          <chr>       
+    #>   1    1061 01-01-2023  13:15:08 Chris Lee       Veg          Pepperoni Piz~ Small       
+    #>   2    1001 01-01-2023  22:01:11 Jane Smith      Veg          Pepperoni Piz~ Medium      
+    #>   3    1083 01-01-2023  16:38:46 Chris Lee       Veg          Hawaiian Pizza Medium      
+    #>   4    1041 01-01-2023  16:13:19 Laura Jackson   Non-Veg      Margherita Pi~ Small       
+    #>   5    1003 04-01-2023  21:10:17 Laura Jackson   Veg          Veggie Suprem~ Small       
+    #>   6    1089 04-01-2023  21:10:17 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>   7    1089 04-01-2023  11:50:18 Sarah Taylor    Veg          Margherita Pi~ Large       
+    #>   8    1020 30-01-2023  17:39:59 Michael Brown   Veg          Margherita Pi~ Large       
+    #>   9    1017 01-02-2023  19:03:01 Robert Moore    Veg          Veggie Suprem~ Small       
+    #>  10    1038 01-02-2023  19:28:28 Sarah Taylor    Veg          Veggie Suprem~ Medium      
+    #>  # i 89 more rows
+    #> # i 4 more variables: `Unit Price` <dbl>, Quantity <dbl>, `Total Price` <dbl>,
+    #> #   `Payment Method` <chr>
+    ```
+    
+-  
