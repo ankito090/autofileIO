@@ -1,5 +1,5 @@
 # autofileIO
-![Main Menu](resources/logo.png)
+![](man/figures/logo.png)
 #### By Ankit AKash Kalita
 #### Video Overview: https://youtu.be/Jhf7FcmeQ-k?si=TQ5PdTLgK_qSEvsS
 
@@ -20,12 +20,39 @@ autofileIO is an R package designed to simplify file input and output operations
 
 ## Installation
 
-* **Install `devtools` (if not already installed):**
+* **Step 1: Install `devtools` (if not already installed):**
+
+    The devtools package is required to install packages from GitHub. If it is not installed, run:
 
     ```r
     install.packages("devtools")
     ```
 
+* **Step 2: Install `autofileIO` from GitHub:**
+    
+    Use `devtools::install_github()` to install the package:
+
+    ```r
+    devtools::install_github("ankito090/autofileIO")
+    ```
+
+* **Step 3:**
+    Check if the package was installed successfully by running:
+
+    ```r
+    find.package("autofileIO")
+    ```
+
+    The `find.package()` function will search for the package in the library paths. If the package is installed, it returns the file path; otherwise, it will throw an error.
+
+
+* **Step 4: Load the Package**
+
+    Upon successful installation, load the package into your R session:
+
+    ```r
+    library(autofileIO)
+    ```
 
 
 ## Function Overview
@@ -231,3 +258,7 @@ autofileIO is an R package designed to simplify file input and output operations
     conn <- dbConnect(SQLite(), "sample_dataset.db")
     auto_write(sample_dataset, x = conn, name = "sample_table") 
     ```
+
+## Contribution
+
+Contributions are welcome! If you encounter any issues or have ideas for enhancements, please feel free to submit an issue or pull request.
