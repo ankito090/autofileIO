@@ -18,9 +18,19 @@ autofileIO is an R package designed to simplify file input and output operations
 - **`autofileIO.Rproj`:** RStudio project file for managing the development environment.  
 - **`.Rbuildignore`:** Specifies files (like `.Rproj.user/`) that should be excluded from the built package.
 
+## Installation
+
+* **Install `devtools` (if not already installed):**
+
+    ```r
+    install.packages("devtools")
+    ```
+
+
+
 ## Function Overview
 
-- **`supported_formats()`:** List Supported and Unsupported File Formats
+- ### **`supported_formats()`:** List Supported and Unsupported File Formats.
 
     **Example:**
     ```r
@@ -47,7 +57,7 @@ autofileIO is an R package designed to simplify file input and output operations
     #> ❌ YAML (Yet Another Markup Language): .yaml, .yml
     ```
   
-- **`auto_read()`:** Automatically Read Data from Files or SQL Database Tables
+- ### **`auto_read()`:** Automatically Read Data from Files or SQL Database Tables.
 
     **Examples:**
 
@@ -185,4 +195,39 @@ autofileIO is an R package designed to simplify file input and output operations
     #> #   `Payment Method` <chr>
     ```
     
--  
+-  ### **`auto_write()`:** Automatically detects the file type based on the provided extension and writes the data accordingly.
+
+    **Examples:**
+
+    Create a sample dataset:
+    ```r
+    sample_dataset <- data.frame(
+      Name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+      Age = c(25, 30, 35, 40, 45)
+    )
+    ```
+    Write to a CSV file:
+    ```r
+    auto_write(sample_dataset, x = "sample_dataset.csv")
+    ```
+    Write to a TSV file:
+    ```r
+    auto_write(sample_dataset, x = "sample_dataset.tsv")
+    ```
+    Write to a delimited text file:
+    ```r
+    auto_write(sample_dataset, x = "sample_dataset.txt")
+    auto_write(sample_dataset, x = "sample_dataset.dat")
+    auto_write(sample_dataset, x = "sample_dataset.log")
+    ```
+    Write to an Excel file:
+    ```r
+    auto_write(sample_dataset, x = "sample_dataset.xlsx")
+    ```
+    Write to a SQL database:
+    ```r
+    library(DBI) 
+    library(RSQLite)
+    conn <- dbConnect(SQLite(), "sample_dataset.db")
+    auto_write(sample_dataset, x = conn, name = "sample_table") 
+    ```
