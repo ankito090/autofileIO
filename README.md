@@ -5,7 +5,7 @@
 
 ## Package Overview
 
-autofileIO is an R package designed to simplify file input and output operations. It provides a unified interface for reading and writing various file formats without the need to switch between different functions or packages.
+**autofileIO** is an R package designed to simplify file input and output operations. It provides a unified interface for reading and writing various file formats without the need to switch between different functions or packages.
 
 ## Main Files 
 - **`R/`:** Contains the core R scripts that define the package's functions.  
@@ -22,7 +22,7 @@ autofileIO is an R package designed to simplify file input and output operations
 
 * **Step 1: Install `devtools` (if not already installed):**
 
-    The devtools package is required to install packages from GitHub. If it is not installed, run:
+    The `devtools` package is required to install packages from GitHub. If it is not installed, run:
 
     ```r
     install.packages("devtools")
