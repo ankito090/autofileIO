@@ -7,6 +7,14 @@
 
 **autofileIO** is an R package designed to simplify file input and output operations. It provides a unified interface for reading and writing various file formats without the need to switch between different functions or packages.
 
+## Contents
+* [Main Files](#main-files)
+* [Function and Class Overview](#function-and-class-overview)
+* [Libraries Used](#libraries-used)
+* [Testing Approach](#testing-approach)
+* [How to Use](#how-to-use)
+* [Limitations](#limitations)
+
 ## Main Files 
 - **`R/`:** Contains the core R scripts that define the package's functions.  
 - **`man/`:** Stores documentation files (`.Rd` files) for each function.  
